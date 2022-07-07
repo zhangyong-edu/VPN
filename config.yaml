@@ -137,7 +137,7 @@ proxies:
   - {name: 土耳其(youtube阿伟科技) 2, server: iepl03.pglmamle.xyz, port: 9085, type: ssr, cipher: chacha20-ietf, password: ygUo3W, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 18138:mq1IL0, obfs-param: WTJRek4yVXhPREV6T0M1dGFXTnliM052Wm5RdVkyOXQ, udp: true}
   - {name: 土耳其(youtube阿伟科技) 3, server: relay1.wl-node1.com, port: 39015, type: ss, cipher: aes-128-gcm, password: 0eae20e2-b9aa-45a1-8bb9-be1a0ad89b51, udp: true}
   - {name: 新西兰(youtube阿伟科技), server: ftp.cn.debian.cdnet.in, port: 8070, type: ss, cipher: aes-128-gcm, password: a9a2a0a5-7340-45f2-9cad-4351a42316e1, udp: true}
-  - {name: 中国-印度马哈拉施特拉IPLCD09, server: in09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ZG93bmxvYWQud2luZG93c3VwZGF0ZS5jb20, udp: true}
+  - {name: 🇮🇳印度(youtube阿伟科技), server: in09.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ZG93bmxvYWQud2luZG93c3VwZGF0ZS5jb20, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -276,7 +276,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -414,7 +414,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -553,7 +553,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -704,7 +704,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -868,7 +868,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1006,7 +1006,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1145,7 +1145,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1293,7 +1293,7 @@ proxy-groups:
       - 土耳其(youtube阿伟科技) 2
       - 土耳其(youtube阿伟科技) 3
       - 新西兰(youtube阿伟科技)
-      - 中国-印度马哈拉施特拉IPLCD09
+      - 🇮🇳印度(youtube阿伟科技)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
