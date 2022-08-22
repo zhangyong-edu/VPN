@@ -5,64 +5,75 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: YouTube梦歌|Netflix_1, server: hnyd.52147.top, port: 30180, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_2, server: hnyd.52147.top, port: 30150, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_3, server: gzyd1.52147.top, port: 30180, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_4, server: gzyd1.52147.top, port: 30010, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_5, server: hnyd.52147.top, port: 30010, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_6, server: gzyd1.52147.top, port: 30130, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_7, server: 103.195.236.24, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_8, server: gzyd1.52147.top, port: 30150, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_9, server: hnyd.52147.top, port: 30080, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_10, server: hnyd.52147.top, port: 30060, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_11, server: us-sjc-ap-tr.node.inforun.work, port: 789, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: cdn.savoy.click}
-  - {name: YouTube梦歌|Netflix_12, server: gzyd1.52147.top, port: 30030, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_13, server: gzyd1.52147.top, port: 30080, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_14, server: hnyd.52147.top, port: 30030, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_15, server: 202.8.9.27, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_16, server: ersgdf.passwordv2.com, port: 7402, type: ss, cipher: aes-128-gcm, password: c0b4efb0-ab81-46f8-87af-815b62351089}
-  - {name: YouTube梦歌|Netflix_17, server: gzyd1.52147.top, port: 30060, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_18, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: YouTube梦歌|Netflix_19, server: 45.88.148.234, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_20, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: YouTube梦歌|Netflix_21, server: hinet1.52147.top, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_22, server: 103.173.255.21, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_23, server: 45.82.253.234, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_24, server: 103.173.255.228, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_25, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: YouTube梦歌|Netflix_26, server: hinet.52147.top, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_27, server: b-entry.linkdns.xyz, port: 40256, type: vmess, uuid: 95ebc6b2-7b4c-3816-bc9b-63f56f775373, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}}
-  - {name: YouTube梦歌|Netflix_28, server: 103.173.255.234, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_29, server: 103.173.255.127, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_30, server: hnyd.52147.top, port: 30180, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_31, server: hnyd.52147.top, port: 30150, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_32, server: gzyd1.52147.top, port: 30180, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_33, server: gzyd1.52147.top, port: 30010, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_34, server: hnyd.52147.top, port: 30010, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_35, server: gzyd1.52147.top, port: 30130, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_36, server: 103.195.236.24, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_37, server: gzyd1.52147.top, port: 30150, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_38, server: hnyd.52147.top, port: 30080, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_39, server: hnyd.52147.top, port: 30060, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_40, server: us-sjc-ap-tr.node.inforun.work, port: 789, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: cdn.savoy.click}
-  - {name: YouTube梦歌|Netflix_41, server: gzyd1.52147.top, port: 30030, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_42, server: gzyd1.52147.top, port: 30080, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_43, server: hnyd.52147.top, port: 30030, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_44, server: 202.8.9.27, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_45, server: ersgdf.passwordv2.com, port: 7402, type: ss, cipher: aes-128-gcm, password: c0b4efb0-ab81-46f8-87af-815b62351089}
-  - {name: YouTube梦歌|Netflix_46, server: gzyd1.52147.top, port: 30060, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_47, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: YouTube梦歌|Netflix_48, server: 45.88.148.234, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_49, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: YouTube梦歌|Netflix_50, server: hinet1.52147.top, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_51, server: 103.173.255.21, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_52, server: 45.82.253.234, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_53, server: 103.173.255.228, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_54, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: YouTube梦歌|Netflix_55, server: hinet.52147.top, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_56, server: b-entry.linkdns.xyz, port: 40256, type: vmess, uuid: 95ebc6b2-7b4c-3816-bc9b-63f56f775373, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}}
-  - {name: YouTube梦歌|Netflix_57, server: 103.173.255.234, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
-  - {name: YouTube梦歌|Netflix_58, server: 103.173.255.127, port: 28443, type: trojan, password: be2d82c0-e6a8-4812-9810-6a9d20ee0353, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_1, server: hscdn-videofs02.acfunvideo.sudacdn.com, port: 19113, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: hscdn-videofs02.acfunvideo.sudacdn.com}}}
+  - {name: YouTube梦歌|Netflix_2, server: hscdn-videofs02.acfunvideo.sudacdn.com, port: 19113, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: hscdn-videofs02.acfunvideo.sudacdn.com}}}
+  - {name: YouTube梦歌|Netflix_3, server: gzcm.boomnat.com, port: 63286, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: korea.anthoncloud.com}
+  - {name: YouTube梦歌|Netflix_4, server: hscdn-videofs02.acfunvideo.sudacdn.com, port: 19113, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: hscdn-videofs02.acfunvideo.sudacdn.com}}}
+  - {name: YouTube梦歌|Netflix_5, server: 20.24.44.110, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_6, server: 18.162.56.130, port: 443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_7, server: fscm.boomnat.com, port: 38527, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: taiwan.anthoncloud.com}
+  - {name: YouTube梦歌|Netflix_8, server: azcdn-videofs01.acfunvideo.bilicdn.net, port: 10010, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: t.me/mengge88888888}}}
+  - {name: YouTube梦歌|Netflix_9, server: 18.162.207.193, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_10, server: moble01.00download.xyz, port: 60116, type: ss, cipher: chacha20-ietf-poly1305, password: 4e7d4518-54e1-46a3-9bd2-b8d29b70345f}
+  - {name: YouTube梦歌|Netflix_11, server: hk17.swty.club, port: 10982, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk17.swty.club}}}
+  - {name: YouTube梦歌|Netflix_12, server: 23.225.77.222, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_13, server: 23.225.77.187, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_14, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
+  - {name: YouTube梦歌|Netflix_15, server: gzcm.boomnat.com, port: 47869, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: taiwan.anthoncloud.com}
+  - {name: YouTube梦歌|Netflix_16, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
+  - {name: YouTube梦歌|Netflix_17, server: 40.81.201.179, port: 57920, type: vmess, uuid: 1a245bcd-47f1-48ec-a2a9-5c98fb9fc441, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: t.me/mengge88888888}}}
+  - {name: YouTube梦歌|Netflix_18, server: su2.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: su2.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_19, server: hk31.swty.club, port: 12215, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tops/hd.m3u8, headers: {Host: hk31.swty.club}}}
+  - {name: YouTube梦歌|Netflix_20, server: 103.167.135.6, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_21, server: hzcm.henet.cyou, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: be28b26e-36cb-4c3b-ba4d-1f8f9cb09741}
+  - {name: YouTube梦歌|Netflix_22, server: gyjp1.333003.xyz, port: 59324, type: trojan, password: 3b92e1f3-6c4b-4b0e-98d6-3677527176a2, sni: gjp.333003.xyz}
+  - {name: YouTube梦歌|Netflix_23, server: 146.56.184.242, port: 19570, type: vmess, uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9, alterId: 0, cipher: auto, tls: false}
+  - {name: YouTube梦歌|Netflix_24, server: 85.90.246.11, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_25, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
+  - {name: YouTube梦歌|Netflix_26, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: YouTube梦歌|Netflix_27, server: hk33.swty.club, port: 12831, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk33.swty.club}}}
+  - {name: YouTube梦歌|Netflix_28, server: hk34.swty.club, port: 17659, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk34.swty.club}}}
+  - {name: YouTube梦歌|Netflix_29, server: fscm.boomnat.com, port: 38959, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: singapore.anthoncloud.com}
+  - {name: YouTube梦歌|Netflix_30, server: hk33.swty.club, port: 12831, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk33.swty.club}}}
+  - {name: YouTube梦歌|Netflix_31, server: 103.195.236.24, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_32, server: britain1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: t.me/mengge88888888}}}
+  - {name: YouTube梦歌|Netflix_33, server: su2.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: su2.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_34, server: tw-tpe-h-v2.cdn.savoy.click, port: 10088, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: tw-tpe-h-v2.cdn.savoy.click}}}
+  - {name: YouTube梦歌|Netflix_35, server: hk18.swty.club, port: 10982, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.swty.club}}}
+  - {name: YouTube梦歌|Netflix_36, server: su2.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: su2.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_37, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
+  - {name: YouTube梦歌|Netflix_38, server: 104.18.21.226, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnneo, headers: {Host: sanggoro6.nextvpn.cc}}}
+  - {name: YouTube梦歌|Netflix_39, server: su1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: su1.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_40, server: britain1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: britain1.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_41, server: su1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: su1.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_42, server: su2.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: su2.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_43, server: 103.173.255.234, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_44, server: britain1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: britain1.chaoxn.top}}}
+  - {name: YouTube梦歌|Netflix_45, server: 202.8.9.27, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_46, server: singapore.anthoncloud.com, port: 3306, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: singapore.anthoncloud.com}
+  - {name: YouTube梦歌|Netflix_47, server: 103.173.255.127, port: 28443, type: trojan, password: 19e9475f-31ab-48e9-8642-1205b94fc5ce, sni: download.windowsupdate1.com}
+  - {name: YouTube梦歌|Netflix_48, server: hk35.swty.club, port: 19274, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk35.swty.club}}}
+  - {name: YouTube梦歌|Netflix_49, server: 42.186.175.8, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/323127100515, headers: {Host: www.93147341.xyz}}}
+  - {name: YouTube梦歌|Netflix_50, server: azcdn-videofs01.acfunvideo.bilicdn.net, port: 10010, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: azcdn-videofs01.acfunvideo.bilicdn.net}}}
+  - {name: YouTube梦歌|Netflix_51, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
+  - {name: YouTube梦歌|Netflix_52, server: azcdn-videofs01.acfunvideo.bilicdn.net, port: 10010, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: azcdn-videofs01.acfunvideo.bilicdn.net}}}
+  - {name: YouTube梦歌|Netflix_53, server: 821hk05.tfzhc.top, port: 443, type: trojan, password: 31f12d66-7e9b-426d-96aa-914a77644f43, sni: 821hk05.tfzhc.top}
+  - {name: YouTube梦歌|Netflix_54, server: ss11.swty.cloud, port: 8912, type: ss, cipher: chacha20-ietf-poly1305, password: b5a6fd26-a422-4b31-9439-ef61b99c0881}
+  - {name: YouTube梦歌|Netflix_55, server: hscdn-videofs02.acfunvideo.sudacdn.com, port: 19113, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: t.me/mengge88888888}}}
+  - {name: YouTube梦歌|Netflix_56, server: ss14.swty.cloud, port: 8912, type: ss, cipher: chacha20-ietf-poly1305, password: b5a6fd26-a422-4b31-9439-ef61b99c0881}
+  - {name: YouTube梦歌|Netflix_57, server: hk03.swty.club, port: 12155, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.swty.club}}}
+  - {name: YouTube梦歌|Netflix_58, server: hk28.swty.club, port: 15020, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk28.swty.club}}}
+  - {name: YouTube梦歌|Netflix_59, server: v2ray10.free4444.xyz, port: 443, type: vmess, uuid: d3ceb960-10dd-463b-851f-923377ea9d84, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: v2ray10.free4444.xyz}}}
+  - {name: YouTube梦歌|Netflix_60, server: hk26.swty.club, port: 15020, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk26.swty.club}}}
+  - {name: YouTube梦歌|Netflix_61, server: ss20.swty.cloud, port: 8912, type: ss, cipher: chacha20-ietf-poly1305, password: b5a6fd26-a422-4b31-9439-ef61b99c0881}
+  - {name: YouTube梦歌|Netflix_62, server: ss19.swty.cloud, port: 8912, type: ss, cipher: chacha20-ietf-poly1305, password: b5a6fd26-a422-4b31-9439-ef61b99c0881}
+  - {name: YouTube梦歌|Netflix_63, server: hk16.swty.club, port: 10982, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.swty.club}}}
+  - {name: YouTube梦歌|Netflix_64, server: ss13.swty.cloud, port: 8912, type: ss, cipher: chacha20-ietf-poly1305, password: b5a6fd26-a422-4b31-9439-ef61b99c0881}
+  - {name: YouTube梦歌|Netflix_65, server: hk27.swty.club, port: 15020, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk27.swty.club}}}
+  - {name: YouTube梦歌|Netflix_66, server: hk02.swty.club, port: 12155, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk02.swty.club}}}
+  - {name: YouTube梦歌|Netflix_67, server: hk04.swty.club, port: 12155, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk04.swty.club}}}
+  - {name: YouTube梦歌|Netflix_68, server: hk19.swty.club, port: 10982, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk19.swty.club}}}
+  - {name: YouTube梦歌|Netflix_69, server: hk20.swty.club, port: 10982, type: vmess, uuid: b5a6fd26-a422-4b31-9439-ef61b99c0881, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk20.swty.club}}}
 proxy-groups:
   - name: 🌐 Moon节点选择
     type: select
@@ -127,6 +138,17 @@ proxy-groups:
       - YouTube梦歌|Netflix_56
       - YouTube梦歌|Netflix_57
       - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_62
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_65
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_69
   - name: ☁️ Domestic
     type: select
     proxies:
@@ -201,6 +223,17 @@ proxy-groups:
       - YouTube梦歌|Netflix_56
       - YouTube梦歌|Netflix_57
       - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_62
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_65
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_69
   - name: 🎈 Failover
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -265,6 +298,17 @@ proxy-groups:
       - YouTube梦歌|Netflix_56
       - YouTube梦歌|Netflix_57
       - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_62
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_65
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_69
 rules:
  - DOMAIN-SUFFIX,digicert.com,🌐 Moon节点选择
  - DOMAIN,ocsp.comodoca.com,🌐 Moon节点选择
