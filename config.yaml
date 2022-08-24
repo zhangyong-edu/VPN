@@ -5,299 +5,579 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 隧道｜NF｜新加坡+03, server: kqs-moble.gatknqh.cn, port: 43035, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜新加坡+04, server: kqs-moble.gatknqh.cn, port: 19511, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: V2|香港A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45239, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: 隧道｜NF｜台湾+02, server: kqs-moble.gatknqh.cn, port: 44813, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜日本+02, server: kqs-moble.gatknqh.cn, port: 42375, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜韩国+01, server: kqs-moble.gatknqh.cn, port: 23166, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: V2|新加坡A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45149, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: 隧道｜NF｜新加坡+06, server: kqs-moble.gatknqh.cn, port: 42114, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜日本+04, server: kqs-moble.gatknqh.cn, port: 20670, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜菲律宾, server: kqs-moble.gatknqh.cn, port: 45005, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜台湾+01, server: kqs-moble.gatknqh.cn, port: 51875, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: V2|香港A01|原生解锁, server: node.a.access.in.nyapi.buzz, port: 45250, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: 隧道｜NF｜台湾+04, server: kqs-moble.gatknqh.cn, port: 53303, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜日本+03, server: kqs-moble.gatknqh.cn, port: 35380, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜韩国+02, server: kqs-moble.gatknqh.cn, port: 49971, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜新加坡+02, server: kqs-moble.gatknqh.cn, port: 24400, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: SS|泰国A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25001, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: 隧道｜NF｜新加坡+08, server: kqs-moble.gatknqh.cn, port: 22284, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: SS|香港A01|原生解锁, server: node.a.access.in.nyapi.buzz, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: V2|美国A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45194, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: SS|美国A01|IDC|+解锁, server: node.a.access.in.nyapi.buzz, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: V2|印度A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25004, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: 隧道｜NF｜新加坡+05, server: kqs-moble.gatknqh.cn, port: 42113, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: SS|印度A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25005, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: 隧道｜NF｜新加坡+07, server: kqs-moble.gatknqh.cn, port: 23236, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜新加坡+01, server: kqs-moble.gatknqh.cn, port: 47147, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜德国, server: kqs-moble.gatknqh.cn, port: 10781, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜新加坡+09, server: kqs-moble.gatknqh.cn, port: 53091, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 隧道｜NF｜美国+01, server: kqs-moble.gatknqh.cn, port: 29123, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: V2|泰国A01|IDC, server: node.a.access.in.nyapi.buzz, port: 45758, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: 隧道｜NF｜美国+02, server: kqs-moble.gatknqh.cn, port: 29589, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: SS|墨西哥A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25007, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: V2|墨西哥A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25006, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: SS|澳大利亚A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25011, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: V2|土耳其A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25012, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: SS|土耳其A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25013, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: V2|澳大利亚A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25008, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: SS|菲律宾A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25019, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: V2|韩国A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 25009, type: vmess, uuid: 37d567a1-b770-47b3-b02d-391005635dc7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.a.access.in.nyapi.buzz}, udp: true}
-  - {name: SS|南非A01|IDC, server: node.a.access.in.nyapi.buzz, port: 25022, type: ss, cipher: chacha20-ietf-poly1305, password: 37d567a1-b770-47b3-b02d-391005635dc7, udp: true}
-  - {name: 加拿大01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11902, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
-  - {name: 荷兰04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install04.vnupgcn.cn}, udp: true}
-  - {name: 荷兰02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 阿塞拜疆02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11930, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 加拿大02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11902, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 南非04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11909, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install04.vnupgcn.cn}, udp: true}
-  - {name: 南非01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11909, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
-  - {name: 阿塞拜疆01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11930, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
-  - {name: 巴西03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11931, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 智利01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11935, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
-  - {name: 智利04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11935, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install04.vnupgcn.cn}, udp: true}
-  - {name: 隧道｜NF｜香港+02, server: kqs-moble.gatknqh.cn, port: 45001, type: ss, cipher: aes-256-gcm, password: 8bff492a-b407-43a8-9f12-238c1d337afd, udp: true}
-  - {name: 南非02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11909, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 南非03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11909, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 沙特阿拉伯01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11910, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
-  - {name: 波兰03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11914, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 沙特阿拉伯03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11910, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 沙特阿拉伯04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11910, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install04.vnupgcn.cn}, udp: true}
-  - {name: Rajasa, server: akrab.gaaa.my.id, port: 443, type: vmess, uuid: d20f1f8f-5e81-4c80-9940-15526e4436c3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: rajasa-free.ajunvpn.group}, udp: true}
-  - {name: 荷兰03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 智利02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11935, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 荷兰01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
+  - {name: 日本1|tg频道:@ripaojiedian, server: node.a.access.in.nyapi.buzz, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 1b4267de-3210-4221-b8d8-74a6e3ed7a56, udp: true}
+  - {name: 香港快|tg频道:@ripaojiedian, server: kqs-moble.gatknqh.cn, port: 53304, type: ss, cipher: aes-256-gcm, password: b954a4ef-14d1-463c-943a-ea05720e8a84, udp: true}
+  - {name: Relay_🇺🇸+US-🇺🇸US_850, server: qoslsjws.hootfun.top, port: 35177, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: qoslsjws.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: 香港BGP03|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: US+SJC+01-TR(trojan), server: us-sjc-01-tr.nodes.cjhh.one, port: 889, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: us-sjc-01-tr.nodes.cjhh.one, skip-cert-verify: true, udp: true}
+  - {name: US_7306+@WangCai_1, server: 38.75.136.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 香港0|tg频道:@ripaojiedian, server: 823hk01.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: 823hk01.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: US_5000+@WangCai_1, server: 38.91.107.37, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_4444+@WangCai_1, server: 38.91.107.37, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8888+@WangCai_1, server: 38.91.107.37, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_3389+@WangCai_1, server: 38.91.107.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5601+@WangCai_1, server: 38.91.107.37, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_3306+@WangCai_1, server: 38.91.107.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8888+@WangCai_1 2, server: 38.91.107.72, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_6679+@WangCai_1, server: 38.91.107.72, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8091+@WangCai_1, server: 38.91.107.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: HK HKG HGC B V2(vmess), server: hk-hkg-hgc-b-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: US_8882+@WangCai_1, server: 38.91.107.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_2375+@WangCai_1, server: 38.91.107.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_815, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_6379+@WangCai_1, server: 38.91.107.37, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US SJC AP V2(vmess), server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: US_5000+@WangCai_1 2, server: 38.91.107.72, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8080+@WangCai_1, server: 38.91.107.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8090+@WangCai_1, server: 38.91.107.72, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_3389+@WangCai_1 2, server: 38.91.107.72, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TW TPE H V2(vmess), server: tw-tpe-h-v2.jd.cjhh.mom, port: 10088, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: US_8080+@WangCai_1 2, server: 38.91.107.72, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_7306+@WangCai_1 2, server: 38.91.107.72, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_7002+@WangCai_1, server: 38.91.107.72, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_9101+@WangCai_1, server: 38.91.107.37, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ‌‌🇨🇦CA_9102+@WangCai_1, server: 38.111.114.246, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_5500+@WangCai_1, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8119+@WangCai_1, server: 38.91.107.72, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_5500+@WangCai_1 2, server: 38.91.107.37, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5601+@WangCai_1 2, server: 38.75.136.34, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5003+@WangCai_1, server: 38.91.107.66, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国|tg频道:@ripaojiedian, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: US_8008+@WangCai_1, server: 38.91.107.72, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8009+@WangCai_1, server: 38.91.107.37, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_7001+@WangCai_1, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦CA_8118+@WangCai_1, server: 38.111.114.246, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_6379+@WangCai_1 2, server: 38.91.107.72, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_9101+@WangCai_1 2, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_03, server: 38.111.114.246, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_4444+@WangCai_1 2, server: 38.91.107.72, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8090+@WangCai_1 2, server: 38.91.107.37, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_3389+@WangCai_1 3, server: 38.75.136.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_7002+@WangCai_1 2, server: 38.75.136.34, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8882+@WangCai_1 2, server: 38.75.136.34, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8091+@WangCai_1 2, server: 38.91.107.72, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8009+@WangCai_1 2, server: 38.75.136.34, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_6697+@WangCai_1, server: 38.91.106.75, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_9102+@WangCai_1, server: 38.91.106.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_0443+@WangCai_1, server: 38.91.107.37, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_9101+@WangCai_1, server: 38.111.114.246, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_5001+@WangCai_1, server: 38.91.107.37, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8080+@WangCai_1 3, server: 38.91.107.66, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5601+@WangCai_1 3, server: 38.91.106.75, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_6679+@WangCai_1 2, server: 38.68.135.18, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国2|tg频道:@ripaojiedian, server: microsoftdebug.com, port: 80, type: vmess, uuid: 6739a0cd-7cd7-4dc2-b060-6a8f2a68e1db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /push, ws-headers: {Host: v1.us5.microsoftdebug.com}, udp: true}
+  - {name: US_8881+@WangCai_1, server: 38.91.107.37, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_2375+@WangCai_1 2, server: 38.91.106.75, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_5601+@WangCai_1 4, server: 38.91.107.66, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_6697+@WangCai_1 2, server: 38.75.136.34, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ‌‌🇨🇦CA_8881+@WangCai_1, server: 38.111.114.246, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8118+@WangCai_1, server: 38.91.106.75, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_6379+@WangCai_1, server: 38.111.114.246, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_122+TG@peekfun, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_9102+@WangCai_1 2, server: 38.91.107.66, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_5600+@WangCai_1, server: 38.91.106.75, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5004+@WangCai_1, server: 38.75.136.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_7001+@WangCai_1 2, server: 38.75.136.34, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: TG:+@mfjdpd, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: TG:+@mfjdpd 2, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_6379+@WangCai_1 3, server: 38.91.107.66, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_5000+@WangCai_1 3, server: 38.91.107.66, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_0443+@WangCai_1 2, server: 38.91.106.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8080+@WangCai_1 4, server: 38.68.135.18, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5004+@WangCai_1 2, server: 38.91.106.75, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_6679+@WangCai_1 3, server: 38.75.136.34, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8091+@WangCai_1 3, server: 38.91.107.66, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_2376+@WangCai_1, server: 38.68.135.18, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_8881+@WangCai_1 2, server: 38.91.106.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_4444+@WangCai_1 3, server: 38.91.107.66, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8091+@WangCai_1 4, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8080+@WangCai_1 5, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8000+@WangCai_1, server: 38.91.107.66, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌‌🇨🇦CA_8000+@WangCai_1, server: 38.111.114.246, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8090+@WangCai_1 3, server: 38.91.107.66, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8119+@WangCai_1 2, server: 38.91.107.37, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_2375+@WangCai_1 3, server: 38.75.136.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_4444+@WangCai_1 4, server: 38.91.106.75, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_3306+@WangCai_1 2, server: 38.91.106.75, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇺🇸+US-🇺🇸US_853, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: US_125+TG@peekfun, server: 38.68.135.18, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_5000+@WangCai_1 4, server: 38.75.136.34, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦CA_5001+@WangCai_1, server: 38.111.114.246, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8009+@WangCai_1 3, server: 38.91.107.72, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8881+@WangCai_1 3, server: 38.75.136.34, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_5500+@WangCai_1 3, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5600+@WangCai_1 2, server: 38.75.136.34, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8000+@WangCai_1 2, server: 38.75.136.34, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_4444+@WangCai_1 5, server: 38.75.136.34, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ‌‌🇨🇦CA_2376+@WangCai_1, server: 38.111.114.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 香港2|tg频道:@ripaojiedian, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: ‌‌🇨🇦CA_5601+@WangCai_1, server: 38.111.114.246, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5000+@WangCai_1 5, server: 38.91.106.75, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CA_02, server: 38.111.114.246, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_3389+@WangCai_1 4, server: 38.91.106.75, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 新加坡1|tg频道:@ripaojiedian, server: 821sg.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: 821sg.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: US_7307+@WangCai_1, server: 38.68.135.18, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_7307+@WangCai_1 2, server: 38.75.136.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_6697+@WangCai_1 3, server: 38.91.107.66, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8118+@WangCai_1 2, server: 38.91.107.66, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8119+@WangCai_1 3, server: 38.91.107.66, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_2375+@WangCai_1 4, server: 38.68.135.18, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_5004+@WangCai_1 3, server: 38.91.107.66, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_9102+@WangCai_1 3, server: 38.68.135.18, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1435, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: www.sxsy88.tk, skip-cert-verify: true, udp: true}
+  - {name: US_5500+@WangCai_1 4, server: 38.91.107.66, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 日本优化|tg频道:@ripaojiedian, server: 823jp.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: 823jp.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: CA_70, server: 38.111.114.246, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_3389+@WangCai_1 5, server: 38.91.107.66, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_7001+@WangCai_1 3, server: 38.91.106.75, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_5500+@WangCai_1 5, server: 38.91.106.75, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_7002+@WangCai_1 3, server: 38.91.107.66, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8118+@WangCai_1 3, server: 38.91.107.37, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ‌‌🇨🇦CA_8008+@WangCai_1, server: 38.111.114.246, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8080+@WangCai_1 6, server: 38.91.106.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8009+@WangCai_1 4, server: 38.91.106.75, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 永久免费更新, server: 199.247.8.5, port: 18441, type: trojan, password: My4jSNT2Zh, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_10, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _CN_中国->🇭🇰_HK_香港, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 沙特阿拉伯02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11910, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 智利03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11935, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 土耳其01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install01.vnupgcn.cn}, udp: true}
-  - {name: 土耳其03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install03.vnupgcn.cn}, udp: true}
-  - {name: 土耳其02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install02.vnupgcn.cn}, udp: true}
-  - {name: 土耳其04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: aliyun.install04.vnupgcn.cn}, udp: true}
+  - {name: CN_107 | 3.70Mb, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_0443+@WangCai_1 3, server: 38.68.135.18, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: TG:+@mfjdpd 3, server: 821sg.tfzhc.top, port: 443, type: trojan, password: bc947be4-4a9c-4f0b-8095-da32c301aa5a, sni: 821sg.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: "TG: @mfjdpd", server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_106 | 3.67Mb, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -316,337 +596,589 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - SS|香港A01|原生解锁
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 香港快|tg频道:@ripaojiedian
+      - 香港BGP03|优选原生IP|1x
+      - 香港0|tg频道:@ripaojiedian
+      - HK HKG HGC B V2(vmess)
+      - 香港2|tg频道:@ripaojiedian
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -662,75 +1194,145 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 隧道｜NF｜新加坡+03
-      - 隧道｜NF｜新加坡+04
-      - V2|香港A01|IDC| 解锁
-      - 隧道｜NF｜台湾+02
-      - 隧道｜NF｜日本+02
-      - 隧道｜NF｜韩国+01
-      - V2|新加坡A01|IDC| 解锁
-      - 隧道｜NF｜新加坡+06
-      - 隧道｜NF｜日本+04
-      - 隧道｜NF｜菲律宾
-      - 隧道｜NF｜台湾+01
-      - V2|香港A01|原生解锁
-      - 隧道｜NF｜台湾+04
-      - 隧道｜NF｜日本+03
-      - 隧道｜NF｜韩国+02
-      - 隧道｜NF｜新加坡+02
-      - SS|泰国A01|IDC
-      - 隧道｜NF｜新加坡+08
-      - SS|香港A01|原生解锁
-      - V2|美国A01|IDC| 解锁
-      - SS|美国A01|IDC|+解锁
-      - V2|印度A01|IDC
-      - 隧道｜NF｜新加坡+05
-      - SS|印度A01|IDC
-      - 隧道｜NF｜新加坡+07
-      - 隧道｜NF｜新加坡+01
-      - 隧道｜NF｜德国
-      - 隧道｜NF｜新加坡+09
-      - 隧道｜NF｜美国+01
-      - V2|泰国A01|IDC
-      - 隧道｜NF｜美国+02
-      - SS|墨西哥A01|IDC
-      - V2|墨西哥A01|IDC
-      - SS|澳大利亚A01|IDC
-      - V2|土耳其A01|IDC
-      - SS|土耳其A01|IDC
-      - V2|澳大利亚A01|IDC
-      - SS|菲律宾A01|IDC
-      - V2|韩国A01|IDC| 解锁
-      - SS|南非A01|IDC
-      - 加拿大01|深港专线
-      - 荷兰04|深港专线
-      - 荷兰02|深港专线
-      - 阿塞拜疆02|深港专线
-      - 加拿大02|深港专线
-      - 南非04|深港专线
-      - 南非01|深港专线
-      - 阿塞拜疆01|深港专线
-      - 巴西03|深港专线
-      - 智利01|深港专线
-      - 智利04|深港专线
-      - 隧道｜NF｜香港+02
-      - 南非02|深港专线
-      - 南非03|深港专线
-      - 沙特阿拉伯01|深港专线
-      - 波兰03|深港专线
-      - 沙特阿拉伯03|深港专线
-      - 沙特阿拉伯04|深港专线
-      - Rajasa
-      - 荷兰03|深港专线
-      - 智利02|深港专线
-      - 荷兰01|深港专线
+      - 日本1|tg频道:@ripaojiedian
+      - 香港快|tg频道:@ripaojiedian
+      - Relay_🇺🇸+US-🇺🇸US_850
+      - 香港BGP03|优选原生IP|1x
+      - US+SJC+01-TR(trojan)
+      - US_7306+@WangCai_1
+      - 香港0|tg频道:@ripaojiedian
+      - US_5000+@WangCai_1
+      - US_4444+@WangCai_1
+      - US_8888+@WangCai_1
+      - US_3389+@WangCai_1
+      - US_5601+@WangCai_1
+      - US_3306+@WangCai_1
+      - US_8888+@WangCai_1 2
+      - US_6679+@WangCai_1
+      - US_8091+@WangCai_1
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@WangCai_1
+      - US_2375+@WangCai_1
+      - US_815
+      - US_6379+@WangCai_1
+      - US SJC AP V2(vmess)
+      - US_5000+@WangCai_1 2
+      - US_8080+@WangCai_1
+      - US_8090+@WangCai_1
+      - US_3389+@WangCai_1 2
+      - TW TPE H V2(vmess)
+      - US_8080+@WangCai_1 2
+      - US_7306+@WangCai_1 2
+      - US_7002+@WangCai_1
+      - US_9101+@WangCai_1
+      - ‌‌🇨🇦CA_9102+@WangCai_1
+      - US_5500+@WangCai_1
+      - US_8119+@WangCai_1
+      - US_5500+@WangCai_1 2
+      - US_5601+@WangCai_1 2
+      - US_5003+@WangCai_1
+      - 美国|tg频道:@ripaojiedian
+      - US_8008+@WangCai_1
+      - US_8009+@WangCai_1
+      - US_7001+@WangCai_1
+      - ‌‌🇨🇦CA_8118+@WangCai_1
+      - US_6379+@WangCai_1 2
+      - US_9101+@WangCai_1 2
+      - CA_03
+      - US_4444+@WangCai_1 2
+      - US_8090+@WangCai_1 2
+      - US_3389+@WangCai_1 3
+      - US_7002+@WangCai_1 2
+      - US_8882+@WangCai_1 2
+      - US_8091+@WangCai_1 2
+      - US_8009+@WangCai_1 2
+      - US_6697+@WangCai_1
+      - US_9102+@WangCai_1
+      - US_0443+@WangCai_1
+      - ‌‌🇨🇦CA_9101+@WangCai_1
+      - US_5001+@WangCai_1
+      - US_8080+@WangCai_1 3
+      - US_5601+@WangCai_1 3
+      - US_6679+@WangCai_1 2
+      - 美国2|tg频道:@ripaojiedian
+      - US_8881+@WangCai_1
+      - US_2375+@WangCai_1 2
+      - US_5601+@WangCai_1 4
+      - US_6697+@WangCai_1 2
+      - ‌‌🇨🇦CA_8881+@WangCai_1
+      - US_8118+@WangCai_1
+      - ‌‌🇨🇦CA_6379+@WangCai_1
+      - US_122+TG@peekfun
+      - US_9102+@WangCai_1 2
+      - US_5600+@WangCai_1
+      - US_5004+@WangCai_1
+      - US_7001+@WangCai_1 2
+      - TG:+@mfjdpd
+      - TG:+@mfjdpd 2
+      - US_6379+@WangCai_1 3
+      - US_5000+@WangCai_1 3
+      - US_0443+@WangCai_1 2
+      - US_8080+@WangCai_1 4
+      - US_5004+@WangCai_1 2
+      - US_6679+@WangCai_1 3
+      - US_8091+@WangCai_1 3
+      - US_2376+@WangCai_1
+      - US_8881+@WangCai_1 2
+      - US_4444+@WangCai_1 3
+      - US_8091+@WangCai_1 4
+      - US_8080+@WangCai_1 5
+      - US_8000+@WangCai_1
+      - ‌‌🇨🇦CA_8000+@WangCai_1
+      - US_8090+@WangCai_1 3
+      - US_8119+@WangCai_1 2
+      - US_2375+@WangCai_1 3
+      - US_4444+@WangCai_1 4
+      - US_3306+@WangCai_1 2
+      - Relay_🇺🇸+US-🇺🇸US_853
+      - US_125+TG@peekfun
+      - US_5000+@WangCai_1 4
+      - ‌‌🇨🇦CA_5001+@WangCai_1
+      - US_8009+@WangCai_1 3
+      - US_8881+@WangCai_1 3
+      - US_5500+@WangCai_1 3
+      - US_5600+@WangCai_1 2
+      - US_8000+@WangCai_1 2
+      - US_4444+@WangCai_1 5
+      - ‌‌🇨🇦CA_2376+@WangCai_1
+      - 香港2|tg频道:@ripaojiedian
+      - ‌‌🇨🇦CA_5601+@WangCai_1
+      - US_5000+@WangCai_1 5
+      - CA_02
+      - US_3389+@WangCai_1 4
+      - 新加坡1|tg频道:@ripaojiedian
+      - US_7307+@WangCai_1
+      - US_7307+@WangCai_1 2
+      - US_6697+@WangCai_1 3
+      - US_8118+@WangCai_1 2
+      - US_8119+@WangCai_1 3
+      - US_2375+@WangCai_1 4
+      - US_5004+@WangCai_1 3
+      - US_9102+@WangCai_1 3
+      - Relay_🇺🇸US-🇺🇸US_1435
+      - US_5500+@WangCai_1 4
+      - 日本优化|tg频道:@ripaojiedian
+      - CA_70
+      - US_3389+@WangCai_1 5
+      - US_7001+@WangCai_1 3
+      - US_5500+@WangCai_1 5
+      - US_7002+@WangCai_1 3
+      - US_8118+@WangCai_1 3
+      - ‌‌🇨🇦CA_8008+@WangCai_1
+      - US_8080+@WangCai_1 6
+      - US_8009+@WangCai_1 4
+      - 永久免费更新
+      - Relay_🇨🇳CN-🇭🇰HK_10
       - _CN_中国->🇭🇰_HK_香港
-      - 沙特阿拉伯02|深港专线
-      - 智利03|深港专线
-      - 土耳其01|深港专线
-      - 土耳其03|深港专线
-      - 土耳其02|深港专线
-      - 土耳其04|深港专线
+      - CN_107 | 3.70Mb
+      - US_0443+@WangCai_1 3
+      - TG:+@mfjdpd 3
+      - "TG: @mfjdpd"
+      - CN_106 | 3.67Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
