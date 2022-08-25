@@ -5,579 +5,919 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本1|tg频道:@ripaojiedian, server: node.a.access.in.nyapi.buzz, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 1b4267de-3210-4221-b8d8-74a6e3ed7a56, udp: true}
-  - {name: 香港快|tg频道:@ripaojiedian, server: kqs-moble.gatknqh.cn, port: 53304, type: ss, cipher: aes-256-gcm, password: b954a4ef-14d1-463c-943a-ea05720e8a84, udp: true}
-  - {name: Relay_🇺🇸+US-🇺🇸US_850, server: qoslsjws.hootfun.top, port: 35177, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: qoslsjws.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: 香港BGP03|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /BGP03, ws-headers: {Host: cs.daxun.cyou}, udp: true}
-  - {name: US+SJC+01-TR(trojan), server: us-sjc-01-tr.nodes.cjhh.one, port: 889, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: us-sjc-01-tr.nodes.cjhh.one, skip-cert-verify: true, udp: true}
-  - {name: US_7306+@WangCai_1, server: 38.75.136.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 香港0|tg频道:@ripaojiedian, server: 823hk01.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: 823hk01.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: US_5000+@WangCai_1, server: 38.91.107.37, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_4444+@WangCai_1, server: 38.91.107.37, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8888+@WangCai_1, server: 38.91.107.37, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3389+@WangCai_1, server: 38.91.107.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5601+@WangCai_1, server: 38.91.107.37, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3306+@WangCai_1, server: 38.91.107.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8888+@WangCai_1 2, server: 38.91.107.72, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6679+@WangCai_1, server: 38.91.107.72, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8091+@WangCai_1, server: 38.91.107.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: HK HKG HGC B V2(vmess), server: hk-hkg-hgc-b-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: US_8882+@WangCai_1, server: 38.91.107.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2375+@WangCai_1, server: 38.91.107.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 香港亚马逊-河移负载均衡三线, server: hnyd.52147.top, port: 30070, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT-河移+|+解锁流媒体, server: hnyd.52147.top, port: 30180, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港HGC-河移+|+解锁流媒体, server: hnyd.52147.top, port: 30020, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港2-半原生-广港BGP-2x, server: gz1.fkfirewall.top, port: 51465, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: 台湾Hinet-河移+|+解锁流媒体, server: hnyd.52147.top, port: 30010, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: Oracle新加坡-河移, server: hnyd.52147.top, port: 30110, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体, server: gzyd1.52147.top, port: 30040, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 香港2-半原生-豫港BGP-2x, server: hn1.fkfirewall.top, port: 45477, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: 香港二台负载均衡-豫港BGP, server: hn1.fkfirewall.top, port: 47291, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体, server: hnyd.52147.top, port: 30040, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: Oracle日本东京-河移三线负载均衡, server: hnyd.52147.top, port: 30050, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南1G-河移负载均衡三线+|+解锁流媒体, server: hnyd.52147.top, port: 30060, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南-2号, server: 103.173.255.127, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 香港亚马逊-2号, server: 18.162.207.193, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号, server: 103.173.255.21, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 越南-4号, server: 103.173.255.234, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 新加坡Az+|+解锁流媒体, server: 20.24.44.110, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸+US-🇺🇸US_854, server: qoslsjws.hootfun.top, port: 25333, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: qoslsjws.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡原生1-广新-1.6x, server: gz1.fkfirewall.top, port: 27174, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: 韩国-河移三线负载均衡, server: hnyd.52147.top, port: 30100, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-广州移动负载均衡+|+解锁流媒体, server: gzyd1.52147.top, port: 30130, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: Oracle日本东京-广移三线负载均衡, server: gzyd1.52147.top, port: 30050, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 德国Linode-广州移动负载均衡+|+解锁流媒体, server: gzyd1.52147.top, port: 30090, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 美国-1号, server: 23.224.33.72, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 德国Linode-河南移动负载均衡+|+解锁流媒体, server: hnyd.52147.top, port: 30090, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国-广移三线负载均衡, server: gzyd1.52147.top, port: 30100, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 美国+凤凰城+01【4+LB】, server: 40.73.113.150, port: 30006, type: ss, cipher: aes-128-gcm, password: eemLJsRibUVT17pN, udp: true}
+  - {name: 香港亚马逊-1号, server: 18.162.56.130, port: 443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 日本3-半原生-沪日-1.7x, server: sh2.18comic.ml, port: 34512, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: Relay_🇺🇸+US-🇺🇸US_855, server: lswjs.hootfun.top, port: 23561, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: lswjs.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: US_1143 | 3.34Mb, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 9405+@资源分享师, server: 183.232.158.66, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_123, server: uiug.expirationv3.com, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 香港B, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: 76529ec1-aa92-3125-ab1d-69596818c297, sni: bnbq-zf.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: 德国-河移双线负载均衡+|+解锁流媒体, server: hnyd.52147.top, port: 30080, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 德国-广移双线负载均衡+|+解锁流媒体, server: gzyd1.52147.top, port: 30080, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 蒙古-无视DMCA-SG-0.1x公益, server: sg1.fkfirewall.top, port: 30432, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: US_8881+@资源分享师, server: 38.91.107.37, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 半价优惠码 gxq4d4m, server: gz1.fkfirewall.top, port: 11451, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: 新加坡原生2-0.3x-公益, server: sg1.fkfirewall.top, port: 30433, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: US_3306+@资源分享师, server: 38.91.107.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8009+@资源分享师, server: 38.91.107.37, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 土耳其, server: trq-zf.jiashumao.net, port: 30606, type: trojan, password: 76529ec1-aa92-3125-ab1d-69596818c297, sni: trq-zf.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_32, server: www.xyxdbp.xyz, port: 34136, type: vmess, uuid: 52e9ffc9-0831-4c9d-e8ec-e4312caad4c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_6379+@资源分享师, server: 38.91.107.37, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8119+@资源分享师+2, server: 38.91.107.37, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_5601+@资源分享师, server: 38.91.107.37, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8090+@资源分享师+2, server: 38.91.107.37, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 台湾3-全原生-沪日-1.6x, server: sh2.18comic.ml, port: 20230, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: 美国西雅图-3号+|+解锁流媒体+|+0.1x, server: 212.90.123.130, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 如节点不能用请更新订阅, server: us2.fkfirewall.top, port: 11451, type: vmess, uuid: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us2.fkfirewall.top}, udp: true}
   - {name: US_815, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_6379+@WangCai_1, server: 38.91.107.37, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US SJC AP V2(vmess), server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: US_5000+@WangCai_1 2, server: 38.91.107.72, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8080+@WangCai_1, server: 38.91.107.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8090+@WangCai_1, server: 38.91.107.72, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_3389+@WangCai_1 2, server: 38.91.107.72, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5000+@资源分享师, server: 38.91.107.37, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇨🇦+CA-🇨🇦CA_45, server: tw821.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: tw821.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: US_8882+@资源分享师, server: 38.91.107.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国洛杉矶-1号+|+解锁流媒体+|+0.1x, server: 45.88.148.234, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: US_8888+@资源分享师, server: 38.91.107.37, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8091+@资源分享师+2, server: 38.91.107.72, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_5000+@资源分享师+2, server: 38.91.107.72, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8888+@资源分享师 2, server: 38.121.43.204, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 德国linode-3号+|+解锁流媒体, server: 85.90.246.11, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 台湾2-全原生-广港BGP-1.6x, server: gz1.fkfirewall.top, port: 43684, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: US_6679+@资源分享师, server: 38.91.107.72, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_4444+@资源分享师+2, server: 38.91.107.72, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 韩国1-原生-沪韩-1.6x, server: sh2.18comic.ml, port: 44265, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: US_0443+@资源分享师, server: 38.91.107.37, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 德国+法兰克福+01+【4+LB】, server: 40.73.113.150, port: 30008, type: ss, cipher: aes-128-gcm, password: eemLJsRibUVT17pN, udp: true}
+  - {name: US_9101+@资源分享师, server: 38.91.107.37, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国1-原生-0.5x-新加坡, server: sg1.fkfirewall.top, port: 30437, type: vmess, uuid: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg1.fkfirewall.top}, udp: true}
+  - {name: US_3389+@资源分享师+2, server: 38.91.107.72, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8090+@资源分享师, server: 38.91.107.72, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_8009+@资源分享师+3, server: 38.91.107.72, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_8119+@资源分享师, server: 38.91.107.72, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_6379+@资源分享师+2, server: 38.91.107.72, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_5500+@资源分享师, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8118+@资源分享师+3, server: 38.91.107.37, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8080+@资源分享师, server: 38.121.43.204, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_9102+@资源分享师, server: 38.121.43.204, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 日本NTT-河南移动负载均衡+|+解锁流媒体, server: hnyd.52147.top, port: 30130, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: US_4444+@资源分享师, server: 38.91.107.37, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8080+@资源分享师 2, server: 38.91.107.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5500+@资源分享师 2, server: 38.121.43.204, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_7002+@资源分享师, server: 38.91.107.72, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8008+@资源分享师, server: 38.121.43.204, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 邀请用户最高可获得35%比例返现！满2￥可提现, server: jp1.fkfirewall.top, port: 443, type: vmess, uuid: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: jp1.fkfirewall.top}, udp: true}
+  - {name: 9407+@资源分享师, server: 183.232.158.66, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: US_7001+@资源分享师, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_7307+@资源分享师, server: 38.121.43.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_6379+@资源分享师 2, server: 38.121.43.204, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_3389+@资源分享师, server: 38.121.43.204, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_36, server: 147.139.7.71, port: 888, type: vmess, uuid: 08d6729d-830e-4341-df76-62d3d12e75e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 147.139.7.71}, udp: true}
+  - {name: US_5003+@资源分享师, server: 38.121.43.204, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5004+@资源分享师, server: 38.121.43.204, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_0443+@资源分享师 2, server: 38.121.43.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_2375+@资源分享师, server: 38.91.107.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_3306+@资源分享师 2, server: 38.121.43.204, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8119+@资源分享师 2, server: 38.121.43.204, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_2376+@资源分享师, server: 38.121.43.204, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_3389+@资源分享师 2, server: 38.91.107.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_7306+@资源分享师, server: 38.121.43.204, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_9101+@资源分享师 2, server: 38.121.43.204, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_8090+@资源分享师 2, server: 38.121.43.204, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: HK HKG HGC B V2(vmess), server: hk-hkg-hgc-b-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: US_8882+@资源分享师 2, server: 38.121.43.204, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 越南1G-2号+|+解锁流媒体, server: 103.195.236.24, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-2号+|+解锁流媒体, server: 202.8.9.27, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: US_4444+@资源分享师 2, server: 38.121.43.204, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8008+@资源分享师 2, server: 38.91.107.72, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_5500+@资源分享师+2, server: 38.91.107.37, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5001+@资源分享师, server: 38.91.107.37, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_6697+@资源分享师, server: 38.121.43.204, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 香港NTT+|+广州移动+|+2x, server: gzyd1.52147.top, port: 30160, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国-4号, server: 144.24.87.99, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: US_8000+@资源分享师, server: 38.121.43.204, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8009+@资源分享师 2, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_7001+@资源分享师 2, server: 38.121.43.204, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US SJC 01-V2(vmess), server: us-sjc-01-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: US_4444+@资源分享师+5, server: 38.75.136.34, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_5001+@资源分享师 2, server: 38.121.43.204, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8080+@资源分享师+2, server: 38.91.107.72, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_5000+@资源分享师+3, server: 38.91.107.66, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x, server: gzyd1.52147.top, port: 30030, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet-1号 | 解锁流媒体, server: 219.76.13.175, port: 443, type: vmess, uuid: 5c54ba16-ecba-48b1-a69c-62000267ab7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/meizhiyuan/hinet?ed=2048", ws-headers: {Host: hinet.meizhiyuanya.xyz}, udp: true}
+  - {name: US_29, server: 38.75.136.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_5600+@资源分享师+2, server: 38.75.136.34, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港HKT全原生-广港-1.6x, server: gz1.fkfirewall.top, port: 22058, type: ss, cipher: chacha20-ietf-poly1305, password: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, udp: true}
+  - {name: US_8091+@资源分享师, server: 38.91.107.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_7306+@资源分享师+2, server: 38.91.107.72, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: SG_06+@资源分享师, server: 81.90.189.52, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_5600+@资源分享师, server: 38.121.43.204, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港HGC-3号 | 解锁流媒体, server: 219.76.13.178, port: 443, type: vmess, uuid: 5c54ba16-ecba-48b1-a69c-62000267ab7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/meizhiyuan/hkhgc?ed=2048", ws-headers: {Host: hkhgc.meizhiyuanya.xyz}, udp: true}
+  - {name: US_8882+@资源分享师+2, server: 38.75.136.34, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_5004+@资源分享师+2, server: 38.91.106.75, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5500+@资源分享师+3, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_2375+@资源分享师+3, server: 38.75.136.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_5003+@资源分享师 2, server: 38.91.107.66, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_8118+@资源分享师+2, server: 38.91.107.66, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 台湾1-全原生-0.9x, server: tw1.fkfirewall.top, port: 10217, type: vmess, uuid: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: tw1.fkfirewall.top}, udp: true}
+  - {name: US_2375+@资源分享师 2, server: 38.121.43.204, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _JP_日本, server: setup.beistu.xyz, port: 22358, type: vmess, uuid: 2024fb69-342a-4a9d-c0dd-cde6f1095748, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_8881+@资源分享师+3, server: 38.75.136.34, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_7001+@资源分享师+2, server: 38.75.136.34, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_3389+@资源分享师+5, server: 38.91.107.66, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_7306+@资源分享师 2, server: 38.75.136.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 9405+@资源分享师 2, server: 183.232.158.67, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: US_9101+@资源分享师+2, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 香港1-半原生 1.2x, server: hk1.fkfirewall.top, port: 443, type: vmess, uuid: 0860df1a-6d5f-4cbf-8e51-f71b6bf32b7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /run, ws-headers: {Host: hk1.fkfirewall.top}, udp: true}
+  - {name: 德国linode-2号+|+解锁流媒体, server: 172.105.65.61, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 9403+@资源分享师, server: 183.232.158.67, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: US_6679+@资源分享师+3, server: 38.75.136.34, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8009+@资源分享师+2, server: 38.75.136.34, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: TW TPE H V2(vmess), server: tw-tpe-h-v2.jd.cjhh.mom, port: 10088, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: US_8080+@WangCai_1 2, server: 38.91.107.72, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_7306+@WangCai_1 2, server: 38.91.107.72, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_7002+@WangCai_1, server: 38.91.107.72, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_9101+@WangCai_1, server: 38.91.107.37, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ‌‌🇨🇦CA_9102+@WangCai_1, server: 38.111.114.246, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5500+@WangCai_1, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8119+@WangCai_1, server: 38.91.107.72, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_5500+@WangCai_1 2, server: 38.91.107.37, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5601+@WangCai_1 2, server: 38.75.136.34, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5003+@WangCai_1, server: 38.91.107.66, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国|tg频道:@ripaojiedian, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: US_8008+@WangCai_1, server: 38.91.107.72, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8009+@WangCai_1, server: 38.91.107.37, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_7001+@WangCai_1, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦CA_8118+@WangCai_1, server: 38.111.114.246, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_6379+@WangCai_1 2, server: 38.91.107.72, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_9101+@WangCai_1 2, server: 38.75.136.34, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_03, server: 38.111.114.246, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_4444+@WangCai_1 2, server: 38.91.107.72, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8090+@WangCai_1 2, server: 38.91.107.37, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_3389+@WangCai_1 3, server: 38.75.136.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_7002+@WangCai_1 2, server: 38.75.136.34, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8882+@WangCai_1 2, server: 38.75.136.34, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8091+@WangCai_1 2, server: 38.91.107.72, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8009+@WangCai_1 2, server: 38.75.136.34, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_6697+@WangCai_1, server: 38.91.106.75, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_9102+@WangCai_1, server: 38.91.106.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_0443+@WangCai_1, server: 38.91.107.37, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ‌‌🇨🇦CA_9101+@WangCai_1, server: 38.111.114.246, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5001+@WangCai_1, server: 38.91.107.37, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8080+@WangCai_1 3, server: 38.91.107.66, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5601+@WangCai_1 3, server: 38.91.106.75, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6679+@WangCai_1 2, server: 38.68.135.18, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国2|tg频道:@ripaojiedian, server: microsoftdebug.com, port: 80, type: vmess, uuid: 6739a0cd-7cd7-4dc2-b060-6a8f2a68e1db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /push, ws-headers: {Host: v1.us5.microsoftdebug.com}, udp: true}
-  - {name: US_8881+@WangCai_1, server: 38.91.107.37, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2375+@WangCai_1 2, server: 38.91.106.75, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_5601+@WangCai_1 4, server: 38.91.107.66, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_6697+@WangCai_1 2, server: 38.75.136.34, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ‌‌🇨🇦CA_8881+@WangCai_1, server: 38.111.114.246, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_8118+@WangCai_1, server: 38.91.106.75, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ‌‌🇨🇦CA_6379+@WangCai_1, server: 38.111.114.246, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_122+TG@peekfun, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_9102+@WangCai_1 2, server: 38.91.107.66, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_5600+@WangCai_1, server: 38.91.106.75, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5004+@WangCai_1, server: 38.75.136.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_7001+@WangCai_1 2, server: 38.75.136.34, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: TG:+@mfjdpd, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: TG:+@mfjdpd 2, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_6379+@WangCai_1 3, server: 38.91.107.66, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_5000+@WangCai_1 3, server: 38.91.107.66, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_0443+@WangCai_1 2, server: 38.91.106.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8080+@WangCai_1 4, server: 38.68.135.18, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5004+@WangCai_1 2, server: 38.91.106.75, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_6679+@WangCai_1 3, server: 38.75.136.34, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8091+@WangCai_1 3, server: 38.91.107.66, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_2376+@WangCai_1, server: 38.68.135.18, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_8881+@WangCai_1 2, server: 38.91.106.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_4444+@WangCai_1 3, server: 38.91.107.66, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_8091+@WangCai_1 4, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8080+@WangCai_1 5, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8000+@WangCai_1, server: 38.91.107.66, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌‌🇨🇦CA_8000+@WangCai_1, server: 38.111.114.246, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8090+@WangCai_1 3, server: 38.91.107.66, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_8119+@WangCai_1 2, server: 38.91.107.37, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_2375+@WangCai_1 3, server: 38.75.136.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_4444+@WangCai_1 4, server: 38.91.106.75, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_3306+@WangCai_1 2, server: 38.91.106.75, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇺🇸+US-🇺🇸US_853, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: US_125+TG@peekfun, server: 38.68.135.18, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_5000+@WangCai_1 4, server: 38.75.136.34, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦CA_5001+@WangCai_1, server: 38.111.114.246, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8009+@WangCai_1 3, server: 38.91.107.72, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8881+@WangCai_1 3, server: 38.75.136.34, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_5500+@WangCai_1 3, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_5600+@WangCai_1 2, server: 38.75.136.34, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_8000+@WangCai_1 2, server: 38.75.136.34, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_4444+@WangCai_1 5, server: 38.75.136.34, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ‌‌🇨🇦CA_2376+@WangCai_1, server: 38.111.114.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 香港2|tg频道:@ripaojiedian, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: ‌‌🇨🇦CA_5601+@WangCai_1, server: 38.111.114.246, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_5000+@WangCai_1 5, server: 38.91.106.75, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_02, server: 38.111.114.246, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_3389+@WangCai_1 4, server: 38.91.106.75, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 新加坡1|tg频道:@ripaojiedian, server: 821sg.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: 821sg.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: US_7307+@WangCai_1, server: 38.68.135.18, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_7307+@WangCai_1 2, server: 38.75.136.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_6697+@WangCai_1 3, server: 38.91.107.66, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_8118+@WangCai_1 2, server: 38.91.107.66, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_8119+@WangCai_1 3, server: 38.91.107.66, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_2375+@WangCai_1 4, server: 38.68.135.18, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_5004+@WangCai_1 3, server: 38.91.107.66, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_9102+@WangCai_1 3, server: 38.68.135.18, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1435, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: www.sxsy88.tk, skip-cert-verify: true, udp: true}
-  - {name: US_5500+@WangCai_1 4, server: 38.91.107.66, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 日本优化|tg频道:@ripaojiedian, server: 823jp.tfzhc.top, port: 443, type: trojan, password: c9db5351-b0ab-4ba0-bbe3-c02ff8eda6ec, sni: 823jp.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: CA_70, server: 38.111.114.246, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_3389+@WangCai_1 5, server: 38.91.107.66, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_7001+@WangCai_1 3, server: 38.91.106.75, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_5500+@WangCai_1 5, server: 38.91.106.75, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_7002+@WangCai_1 3, server: 38.91.107.66, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_8118+@WangCai_1 3, server: 38.91.107.37, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ‌‌🇨🇦CA_8008+@WangCai_1, server: 38.111.114.246, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_8080+@WangCai_1 6, server: 38.91.106.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_8009+@WangCai_1 4, server: 38.91.106.75, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 永久免费更新, server: 199.247.8.5, port: 18441, type: trojan, password: My4jSNT2Zh, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_10, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇭🇰_HK_香港, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_107 | 3.70Mb, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_0443+@WangCai_1 3, server: 38.68.135.18, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: TG:+@mfjdpd 3, server: 821sg.tfzhc.top, port: 443, type: trojan, password: bc947be4-4a9c-4f0b-8095-da32c301aa5a, sni: 821sg.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: "TG: @mfjdpd", server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_106 | 3.67Mb, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_125+TG@资源分享师, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5601+@资源分享师+2, server: 38.75.136.34, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 9206+@资源分享师, server: 183.232.158.66, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: US_0443+@资源分享师+3, server: 38.68.135.18, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_8080+@资源分享师+4, server: 38.68.135.18, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 韩国-2号, server: 144.24.69.60, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: US_180, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_8091+@资源分享师+4, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_3389+@资源分享师+4, server: 38.91.106.75, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US SJC AP V2(vmess), server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: Relay_🇺🇸+US-🇺🇸US_851, server: us218.hootfun.top, port: 42513, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: us218.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: US_6697+@资源分享师+3, server: 38.91.107.66, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 荷兰04|内网专线|Nederland, server: aliyun.install04.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 阿联酋04|内网专线|Dubai, server: aliyun.install04.vnupgcn.cn, port: 11905, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_6379+@资源分享师+3, server: 38.91.107.66, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8091+@资源分享师+3, server: 38.91.107.66, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国01|原生解锁|APERNET, server: aliyun.unicom.vnupgcn.cn, port: 9022, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_5601+@资源分享师+3, server: 38.91.106.75, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 拉脱维亚04|内网专线|LeţmōVabāmō, server: aliyun.install04.vnupgcn.cn, port: 11917, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列02|内网专线|מדינת ישראל‬‎, server: aliyun.install02.vnupgcn.cn, port: 11934, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列04|内网专线|מדינתישראל‬‎, server: aliyun.install04.vnupgcn.cn, port: 11934, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰02|内网专线|Nederland, server: aliyun.install02.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列04|内网专线|מדינת ישראל‬‎, server: aliyun.install04.vnupgcn.cn, port: 11934, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_5004+@资源分享师 2, server: 38.75.136.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_7307+@资源分享师+2, server: 38.75.136.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 香港04|原生解锁|BGPHK, server: aliyun.moble.vnupgcn.cn, port: 9005, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 拉脱维亚03|内网专线|LeţmōVabāmō, server: aliyun.install03.vnupgcn.cn, port: 11917, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 阿塞拜疆02|内网专线|Azərbaycan, server: aliyun.install02.vnupgcn.cn, port: 11930, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 哥伦比亚01|内网专线|Colombia, server: aliyun.install01.vnupgcn.cn, port: 11922, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_123+TG@资源分享师, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 台湾06|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9017, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾08|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9019, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_7002+@资源分享师+3, server: 38.91.107.66, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 「🇺🇸」EMO+|+龙鳞果+x5, server: n23.emovpn.xyz, port: 1265, type: ss, cipher: chacha20-ietf-poly1305, password: 30de2978-e4df-4106-a7d5-66bb1e730b62, udp: true}
+  - {name: US_5500+@资源分享师+4, server: 38.91.107.66, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国圣何塞-2号+|+解锁流媒体+|+0.1x, server: 45.82.253.234, port: 28443, type: trojan, password: 5c54ba16-ecba-48b1-a69c-62000267ab7e, skip-cert-verify: true, udp: true}
+  - {name: 智利04|内网专线|Chile, server: aliyun.install04.vnupgcn.cn, port: 11935, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯03|内网专线|Россия, server: aliyun.install03.vnupgcn.cn, port: 11911, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 捷克04|内网专线|Česko, server: aliyun.install04.vnupgcn.cn, port: 11916, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 土耳其01|内网专线|Türkiye, server: aliyun.install01.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 土耳其03|内网专线|Türkiye, server: aliyun.install03.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 芬兰02|内网专线|Suomi, server: aliyun.install02.vnupgcn.cn, port: 11933, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 波兰03|内网专线|Polska, server: aliyun.install03.vnupgcn.cn, port: 11914, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 土耳其04|内网专线|Türkiye, server: aliyun.install04.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 奥地利04|内网专线|Österreich, server: aliyun.install04.vnupgcn.cn, port: 11927, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国04|原生解锁|APERNET, server: aliyun.unicom.vnupgcn.cn, port: 9025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 捷克03|内网专线|Česko, server: aliyun.install03.vnupgcn.cn, port: 11916, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 奥地利01|内网专线|Österreich, server: aliyun.install01.vnupgcn.cn, port: 11927, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 波兰04|内网专线|Polska, server: aliyun.install04.vnupgcn.cn, port: 11914, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 捷克02|内网专线|Česko, server: aliyun.install02.vnupgcn.cn, port: 11916, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Alien, server: aliyun.install02.vnupgcn.cn, port: 11908, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 土耳其02|内网专线|Türkiye, server: aliyun.install02.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 孟加拉国03|内网专线|বাংলাদেশ, server: aliyun.install03.vnupgcn.cn, port: 11908, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国02|原生解锁|APERNET, server: aliyun.unicom.vnupgcn.cn, port: 9023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰01|内网专线|Nederland, server: aliyun.install01.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国06|原生解锁|APERNET, server: aliyun.unicom.vnupgcn.cn, port: 9027, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 加拿大02|内网专线|OVHSAS, server: aliyun.install02.vnupgcn.cn, port: 11902, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰03|内网专线|Nederland, server: aliyun.install03.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_8118+@资源分享师, server: 38.91.106.75, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8080+@资源分享师+5, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: SG_00+@资源分享师, server: 81.90.189.49, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 以色列01|内网专线|מדינת ישראל‬‎, server: aliyun.install01.vnupgcn.cn, port: 11934, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_7002+@资源分享师+2, server: 38.75.136.34, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_122+TG@资源分享师, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 阿塞拜疆01|内网专线|Azərbaycan, server: aliyun.install01.vnupgcn.cn, port: 11930, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_0443+@资源分享师+2, server: 38.91.106.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 巴西03|内网专线|Brasil, server: aliyun.install03.vnupgcn.cn, port: 11931, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_8888+@资源分享师+2, server: 38.91.107.72, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 阿根廷02|内网专线|Argentina, server: aliyun.install02.vnupgcn.cn, port: 11921, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_7001+@资源分享师+3, server: 38.91.106.75, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8118+@资源分享师 2, server: 38.121.43.204, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_8080+@资源分享师+3, server: 38.91.107.66, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -596,589 +936,945 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港快|tg频道:@ripaojiedian
-      - 香港BGP03|优选原生IP|1x
-      - 香港0|tg频道:@ripaojiedian
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 香港亚马逊-2号
+      - 香港亚马逊-1号
+      - 香港B
+      - 台湾3-全原生-沪日-1.6x
+      - 台湾2-全原生-广港BGP-1.6x
       - HK HKG HGC B V2(vmess)
-      - 香港2|tg频道:@ripaojiedian
-      - _CN_中国->🇭🇰_HK_香港
+      - 香港NTT+|+广州移动+|+2x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - 香港HKT全原生-广港-1.6x
+      - 香港HGC-3号 | 解锁流媒体
+      - 台湾1-全原生-0.9x
+      - 香港1-半原生 1.2x
+      - 香港04|原生解锁|BGPHK
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1194,145 +1890,230 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本1|tg频道:@ripaojiedian
-      - 香港快|tg频道:@ripaojiedian
-      - Relay_🇺🇸+US-🇺🇸US_850
-      - 香港BGP03|优选原生IP|1x
-      - US+SJC+01-TR(trojan)
-      - US_7306+@WangCai_1
-      - 香港0|tg频道:@ripaojiedian
-      - US_5000+@WangCai_1
-      - US_4444+@WangCai_1
-      - US_8888+@WangCai_1
-      - US_3389+@WangCai_1
-      - US_5601+@WangCai_1
-      - US_3306+@WangCai_1
-      - US_8888+@WangCai_1 2
-      - US_6679+@WangCai_1
-      - US_8091+@WangCai_1
-      - HK HKG HGC B V2(vmess)
-      - US_8882+@WangCai_1
-      - US_2375+@WangCai_1
+      - 香港亚马逊-河移负载均衡三线
+      - 香港HKT-河移+|+解锁流媒体
+      - 香港HGC-河移+|+解锁流媒体
+      - 香港2-半原生-广港BGP-2x
+      - 台湾Hinet-河移+|+解锁流媒体
+      - Oracle新加坡-河移
+      - 新加坡Az-广移四线负载均衡(中转)+|+解锁流媒体
+      - 香港2-半原生-豫港BGP-2x
+      - 香港二台负载均衡-豫港BGP
+      - 新加坡Az-河移四线负载均衡(中转)+|+解锁流媒体
+      - Oracle日本东京-河移三线负载均衡
+      - 越南1G-河移负载均衡三线+|+解锁流媒体
+      - 越南-2号
+      - 香港亚马逊-2号
+      - 越南-1号
+      - 越南-4号
+      - 新加坡Az+|+解锁流媒体
+      - Relay_🇺🇸+US-🇺🇸US_854
+      - 新加坡原生1-广新-1.6x
+      - 韩国-河移三线负载均衡
+      - 日本NTT-广州移动负载均衡+|+解锁流媒体
+      - Oracle日本东京-广移三线负载均衡
+      - 德国Linode-广州移动负载均衡+|+解锁流媒体
+      - 美国-1号
+      - 德国Linode-河南移动负载均衡+|+解锁流媒体
+      - 韩国-广移三线负载均衡
+      - 美国+凤凰城+01【4+LB】
+      - 香港亚马逊-1号
+      - 日本3-半原生-沪日-1.7x
+      - Relay_🇺🇸+US-🇺🇸US_855
+      - US_1143 | 3.34Mb
+      - 9405+@资源分享师
+      - Relay_🇨🇳CN-🇺🇸US_123
+      - 香港B
+      - 德国-河移双线负载均衡+|+解锁流媒体
+      - 德国-广移双线负载均衡+|+解锁流媒体
+      - 蒙古-无视DMCA-SG-0.1x公益
+      - US_8881+@资源分享师
+      - 半价优惠码 gxq4d4m
+      - 新加坡原生2-0.3x-公益
+      - US_3306+@资源分享师
+      - US_8009+@资源分享师
+      - 土耳其
+      - Relay_🇺🇸US-🇺🇸US_32
+      - US_6379+@资源分享师
+      - US_8119+@资源分享师+2
+      - US_5601+@资源分享师
+      - US_8090+@资源分享师+2
+      - 台湾3-全原生-沪日-1.6x
+      - 美国西雅图-3号+|+解锁流媒体+|+0.1x
+      - 如节点不能用请更新订阅
       - US_815
-      - US_6379+@WangCai_1
-      - US SJC AP V2(vmess)
-      - US_5000+@WangCai_1 2
-      - US_8080+@WangCai_1
-      - US_8090+@WangCai_1
-      - US_3389+@WangCai_1 2
+      - US_5000+@资源分享师
+      - Relay_🇨🇦+CA-🇨🇦CA_45
+      - US_8882+@资源分享师
+      - 美国洛杉矶-1号+|+解锁流媒体+|+0.1x
+      - US_8888+@资源分享师
+      - US_8091+@资源分享师+2
+      - US_5000+@资源分享师+2
+      - US_8888+@资源分享师 2
+      - 德国linode-3号+|+解锁流媒体
+      - 台湾2-全原生-广港BGP-1.6x
+      - US_6679+@资源分享师
+      - US_4444+@资源分享师+2
+      - 韩国1-原生-沪韩-1.6x
+      - US_0443+@资源分享师
+      - 德国+法兰克福+01+【4+LB】
+      - US_9101+@资源分享师
+      - 美国1-原生-0.5x-新加坡
+      - US_3389+@资源分享师+2
+      - US_8090+@资源分享师
+      - US_8009+@资源分享师+3
+      - US_8119+@资源分享师
+      - US_6379+@资源分享师+2
+      - US_5500+@资源分享师
+      - US_8118+@资源分享师+3
+      - US_8080+@资源分享师
+      - US_9102+@资源分享师
+      - 日本NTT-河南移动负载均衡+|+解锁流媒体
+      - US_4444+@资源分享师
+      - US_8080+@资源分享师 2
+      - US_5500+@资源分享师 2
+      - US_7002+@资源分享师
+      - US_8008+@资源分享师
+      - 邀请用户最高可获得35%比例返现！满2￥可提现
+      - 9407+@资源分享师
+      - US_7001+@资源分享师
+      - US_7307+@资源分享师
+      - US_6379+@资源分享师 2
+      - US_3389+@资源分享师
+      - US_36
+      - US_5003+@资源分享师
+      - US_5004+@资源分享师
+      - US_0443+@资源分享师 2
+      - US_2375+@资源分享师
+      - US_3306+@资源分享师 2
+      - US_8119+@资源分享师 2
+      - US_2376+@资源分享师
+      - US_3389+@资源分享师 2
+      - US_7306+@资源分享师
+      - US_9101+@资源分享师 2
+      - US_8090+@资源分享师 2
+      - HK HKG HGC B V2(vmess)
+      - US_8882+@资源分享师 2
+      - 越南1G-2号+|+解锁流媒体
+      - 日本NTT-2号+|+解锁流媒体
+      - US_4444+@资源分享师 2
+      - US_8008+@资源分享师 2
+      - US_5500+@资源分享师+2
+      - US_5001+@资源分享师
+      - US_6697+@资源分享师
+      - 香港NTT+|+广州移动+|+2x
+      - 韩国-4号
+      - US_8000+@资源分享师
+      - US_8009+@资源分享师 2
+      - US_7001+@资源分享师 2
+      - US SJC 01-V2(vmess)
+      - US_4444+@资源分享师+5
+      - US_5001+@资源分享师 2
+      - US_8080+@资源分享师+2
+      - US_5000+@资源分享师+3
+      - 美国圣何塞-广州移动负载均衡+|+解锁流媒体+|+0.1x
+      - 台湾Hinet-1号 | 解锁流媒体
+      - US_29
+      - US_5600+@资源分享师+2
+      - 香港HKT全原生-广港-1.6x
+      - US_8091+@资源分享师
+      - US_7306+@资源分享师+2
+      - SG_06+@资源分享师
+      - US_5600+@资源分享师
+      - 香港HGC-3号 | 解锁流媒体
+      - US_8882+@资源分享师+2
+      - US_5004+@资源分享师+2
+      - US_5500+@资源分享师+3
+      - US_2375+@资源分享师+3
+      - US_5003+@资源分享师 2
+      - US_8118+@资源分享师+2
+      - 台湾1-全原生-0.9x
+      - US_2375+@资源分享师 2
+      - _JP_日本
+      - US_8881+@资源分享师+3
+      - US_7001+@资源分享师+2
+      - US_3389+@资源分享师+5
+      - US_7306+@资源分享师 2
+      - 9405+@资源分享师 2
+      - US_9101+@资源分享师+2
+      - 香港1-半原生 1.2x
+      - 德国linode-2号+|+解锁流媒体
+      - 9403+@资源分享师
+      - US_6679+@资源分享师+3
+      - US_8009+@资源分享师+2
       - TW TPE H V2(vmess)
-      - US_8080+@WangCai_1 2
-      - US_7306+@WangCai_1 2
-      - US_7002+@WangCai_1
-      - US_9101+@WangCai_1
-      - ‌‌🇨🇦CA_9102+@WangCai_1
-      - US_5500+@WangCai_1
-      - US_8119+@WangCai_1
-      - US_5500+@WangCai_1 2
-      - US_5601+@WangCai_1 2
-      - US_5003+@WangCai_1
-      - 美国|tg频道:@ripaojiedian
-      - US_8008+@WangCai_1
-      - US_8009+@WangCai_1
-      - US_7001+@WangCai_1
-      - ‌‌🇨🇦CA_8118+@WangCai_1
-      - US_6379+@WangCai_1 2
-      - US_9101+@WangCai_1 2
-      - CA_03
-      - US_4444+@WangCai_1 2
-      - US_8090+@WangCai_1 2
-      - US_3389+@WangCai_1 3
-      - US_7002+@WangCai_1 2
-      - US_8882+@WangCai_1 2
-      - US_8091+@WangCai_1 2
-      - US_8009+@WangCai_1 2
-      - US_6697+@WangCai_1
-      - US_9102+@WangCai_1
-      - US_0443+@WangCai_1
-      - ‌‌🇨🇦CA_9101+@WangCai_1
-      - US_5001+@WangCai_1
-      - US_8080+@WangCai_1 3
-      - US_5601+@WangCai_1 3
-      - US_6679+@WangCai_1 2
-      - 美国2|tg频道:@ripaojiedian
-      - US_8881+@WangCai_1
-      - US_2375+@WangCai_1 2
-      - US_5601+@WangCai_1 4
-      - US_6697+@WangCai_1 2
-      - ‌‌🇨🇦CA_8881+@WangCai_1
-      - US_8118+@WangCai_1
-      - ‌‌🇨🇦CA_6379+@WangCai_1
-      - US_122+TG@peekfun
-      - US_9102+@WangCai_1 2
-      - US_5600+@WangCai_1
-      - US_5004+@WangCai_1
-      - US_7001+@WangCai_1 2
-      - TG:+@mfjdpd
-      - TG:+@mfjdpd 2
-      - US_6379+@WangCai_1 3
-      - US_5000+@WangCai_1 3
-      - US_0443+@WangCai_1 2
-      - US_8080+@WangCai_1 4
-      - US_5004+@WangCai_1 2
-      - US_6679+@WangCai_1 3
-      - US_8091+@WangCai_1 3
-      - US_2376+@WangCai_1
-      - US_8881+@WangCai_1 2
-      - US_4444+@WangCai_1 3
-      - US_8091+@WangCai_1 4
-      - US_8080+@WangCai_1 5
-      - US_8000+@WangCai_1
-      - ‌‌🇨🇦CA_8000+@WangCai_1
-      - US_8090+@WangCai_1 3
-      - US_8119+@WangCai_1 2
-      - US_2375+@WangCai_1 3
-      - US_4444+@WangCai_1 4
-      - US_3306+@WangCai_1 2
-      - Relay_🇺🇸+US-🇺🇸US_853
-      - US_125+TG@peekfun
-      - US_5000+@WangCai_1 4
-      - ‌‌🇨🇦CA_5001+@WangCai_1
-      - US_8009+@WangCai_1 3
-      - US_8881+@WangCai_1 3
-      - US_5500+@WangCai_1 3
-      - US_5600+@WangCai_1 2
-      - US_8000+@WangCai_1 2
-      - US_4444+@WangCai_1 5
-      - ‌‌🇨🇦CA_2376+@WangCai_1
-      - 香港2|tg频道:@ripaojiedian
-      - ‌‌🇨🇦CA_5601+@WangCai_1
-      - US_5000+@WangCai_1 5
-      - CA_02
-      - US_3389+@WangCai_1 4
-      - 新加坡1|tg频道:@ripaojiedian
-      - US_7307+@WangCai_1
-      - US_7307+@WangCai_1 2
-      - US_6697+@WangCai_1 3
-      - US_8118+@WangCai_1 2
-      - US_8119+@WangCai_1 3
-      - US_2375+@WangCai_1 4
-      - US_5004+@WangCai_1 3
-      - US_9102+@WangCai_1 3
-      - Relay_🇺🇸US-🇺🇸US_1435
-      - US_5500+@WangCai_1 4
-      - 日本优化|tg频道:@ripaojiedian
-      - CA_70
-      - US_3389+@WangCai_1 5
-      - US_7001+@WangCai_1 3
-      - US_5500+@WangCai_1 5
-      - US_7002+@WangCai_1 3
-      - US_8118+@WangCai_1 3
-      - ‌‌🇨🇦CA_8008+@WangCai_1
-      - US_8080+@WangCai_1 6
-      - US_8009+@WangCai_1 4
-      - 永久免费更新
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - _CN_中国->🇭🇰_HK_香港
-      - CN_107 | 3.70Mb
-      - US_0443+@WangCai_1 3
-      - TG:+@mfjdpd 3
-      - "TG: @mfjdpd"
-      - CN_106 | 3.67Mb
+      - US_125+TG@资源分享师
+      - US_5601+@资源分享师+2
+      - 9206+@资源分享师
+      - US_0443+@资源分享师+3
+      - US_8080+@资源分享师+4
+      - 韩国-2号
+      - US_180
+      - US_8091+@资源分享师+4
+      - US_3389+@资源分享师+4
+      - US SJC AP V2(vmess)
+      - Relay_🇺🇸+US-🇺🇸US_851
+      - US_6697+@资源分享师+3
+      - 荷兰04|内网专线|Nederland
+      - 阿联酋04|内网专线|Dubai
+      - US_6379+@资源分享师+3
+      - US_8091+@资源分享师+3
+      - 美国01|原生解锁|APERNET
+      - US_5601+@资源分享师+3
+      - 拉脱维亚04|内网专线|LeţmōVabāmō
+      - 以色列02|内网专线|מדינת ישראל‬‎
+      - 以色列04|内网专线|מדינתישראל‬‎
+      - 荷兰02|内网专线|Nederland
+      - 以色列04|内网专线|מדינת ישראל‬‎
+      - US_5004+@资源分享师 2
+      - US_7307+@资源分享师+2
+      - 香港04|原生解锁|BGPHK
+      - 拉脱维亚03|内网专线|LeţmōVabāmō
+      - 阿塞拜疆02|内网专线|Azərbaycan
+      - 哥伦比亚01|内网专线|Colombia
+      - US_123+TG@资源分享师
+      - 台湾06|原生解锁|中華電信
+      - 台湾08|原生解锁|中華電信
+      - US_7002+@资源分享师+3
+      - 「🇺🇸」EMO+|+龙鳞果+x5
+      - US_5500+@资源分享师+4
+      - 美国圣何塞-2号+|+解锁流媒体+|+0.1x
+      - 智利04|内网专线|Chile
+      - 俄罗斯03|内网专线|Россия
+      - 捷克04|内网专线|Česko
+      - 土耳其01|内网专线|Türkiye
+      - 土耳其03|内网专线|Türkiye
+      - 芬兰02|内网专线|Suomi
+      - 波兰03|内网专线|Polska
+      - 土耳其04|内网专线|Türkiye
+      - 奥地利04|内网专线|Österreich
+      - 美国04|原生解锁|APERNET
+      - 捷克03|内网专线|Česko
+      - 奥地利01|内网专线|Österreich
+      - 波兰04|内网专线|Polska
+      - 捷克02|内网专线|Česko
+      - Alien
+      - 土耳其02|内网专线|Türkiye
+      - 孟加拉国03|内网专线|বাংলাদেশ
+      - 美国02|原生解锁|APERNET
+      - 荷兰01|内网专线|Nederland
+      - 美国06|原生解锁|APERNET
+      - 加拿大02|内网专线|OVHSAS
+      - 荷兰03|内网专线|Nederland
+      - US_8118+@资源分享师
+      - US_8080+@资源分享师+5
+      - SG_00+@资源分享师
+      - 以色列01|内网专线|מדינת ישראל‬‎
+      - US_7002+@资源分享师+2
+      - US_122+TG@资源分享师
+      - 阿塞拜疆01|内网专线|Azərbaycan
+      - US_0443+@资源分享师+2
+      - 巴西03|内网专线|Brasil
+      - US_8888+@资源分享师+2
+      - 阿根廷02|内网专线|Argentina
+      - US_7001+@资源分享师+3
+      - US_8118+@资源分享师 2
+      - US_8080+@资源分享师+3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
